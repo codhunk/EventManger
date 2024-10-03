@@ -1,0 +1,420 @@
+.addEventBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px 0;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.addEventBox .left,
+.addEventBox .right {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.addEventBox .left input[type="text"] {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #6f6f70;
+  border-style: none;
+}
+
+.addEventBox .left input[type="text"]:focus {
+  outline: none;
+}
+
+.addEventBox .left .time,
+.addEventBox .left .location {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  box-sizing: border-box;
+  margin-top: 15px;
+}
+
+.addEventBox .left .time .calBox,
+.addEventBox .left .location .locBox {
+  width: 50px;
+  height: fit-content;
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ededed;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.addEventBox .left .time .calBox span {
+  width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  color: #6f6f70;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.addEventBox .left .time .timeBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 8px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.addEventBox .left .time .timeBox input {
+  border-style: none;
+  color: transparent;
+  background-color: transparent;
+  width: 100%;
+}
+
+.addEventBox
+  .left
+  .time
+  .timeBox
+  input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+  border-width: thin;
+}
+
+.addEventBox .left .time .timeBox input::placeholder {
+  display: none;
+}
+
+.addEventBox .left .time .timeBox input:focus {
+  outline: none;
+}
+
+.addEventBox .left .time .timeBox .start,
+.addEventBox .left .time .timeBox .end {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.addEventBox .left .time .timeBox .dateTimeCont {
+  width: 65%;
+  position: relative;
+  background-color: #ededed;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.addEventBox .left .time .timeBox p {
+  font-size: 0.9rem;
+  position: absolute;
+  top: 6.5px;
+  margin: 0 2px;
+}
+
+.addEventBox .left .time .timeBox .gmt {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #67686a;
+}
+
+.addEventBox .left .time .timeBox hr {
+  width: 100%;
+  border: 1px solid #dedee0;
+}
+
+.addEventBox .left .location .locSecBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  padding: 8px;
+  border-radius: 5px;
+  gap: 10px;
+  color: #67686a;
+}
+
+.addEventBox .left .location .locSecBox label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.addEventBox .left .location .locSecBox input[type="text"] {
+  width: 100%;
+  font-size: 1rem;
+  padding: 0px;
+  background-color: transparent;
+  font-weight: 400;
+}
+
+.addEventBox .left .events {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.addEventBox .left .events p {
+  font-weight: 500;
+}
+
+.addEventBox .left .events .eventBox {
+  width: 95%;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  padding: 8px 15px;
+}
+
+.addEventBox .left .events .eventBox hr {
+  width: 100%;
+  border: 1px solid #f0eeee;
+}
+
+.addEventBox .left .events .eventBox .box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addEventBox .left .events .eventBox .box .icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #67686a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.addEventBox .left .events .eventBox .box .edit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #67686a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.addEventBox .left .events .eventBox .box .edit input {
+  background-color: transparent;
+  padding: 0;
+  width: 40px;
+  font-size: 0.95rem;
+  color: #a6a6a8;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #0bbe5c;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #04582a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.addEventBox .left button {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-style: none;
+  border-radius: 8px;
+  background-color: #333537;
+  cursor: pointer;
+}
+
+.addEventBox .right .thumbnail {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.addEventBox .right .thumbnail textarea {
+  border-style: none;
+  font-size: 3rem;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.addEventBox .right .thumbnail textarea:focus {
+  outline: none;
+}
+
+.addEventBox .right .theme {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.addEventBox .right .theme p {
+  font-weight: 500;
+}
+
+.addEventBox .right .theme .tBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 25%;
+  color: #333537;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.addEventBox .right .theme .tBox span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.addEventBox .right .theme .tBoxText {
+  width: 98%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f6f6f6;
+  color: #595b5e;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.addEventBox .right .theme .tBoxText .top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addEventBox .right .theme .tBoxText .color,
+.addEventBox .right .theme .tBoxText .font {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addEventBox .right .theme .tBoxText .color span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.addEventBox .right .theme .tBoxText hr {
+  width: 100%;
+  border: 1px solid #efeff1;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media only screen and (max-width: 750px) {
+  .addEventBox {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addEventBox .left,
+  .addEventBox .right {
+    width: 95%;
+  }
+}
